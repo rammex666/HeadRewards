@@ -1,0 +1,14 @@
+heads_param:
+  number_of_heads_on_spawn: 1
+  delay_between_spawn: 20 # in seconds
+  message_on_spawn: "A head has spawned !" # The message that will be sent to the players when heads spawn
+
+
+rewards:
+  1: # 1 = the id of the reward
+    commands:
+      - "give %player% minecraft:diamond 1" # %player% will be replaced by the player name
+      - "give %player% minecraft:emerald 1"
+      - "give %player% minecraft:gold_ingot 1"
+    message: "You have won the first reward" # The message that will be sent to the player when he click on the head
+

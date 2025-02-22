@@ -1,0 +1,7 @@
+name: HeadReward
+version: '${project.version}'
+main: fr.rammex.headreward.HeadReward
+depend: [HeadDatabase]
+commands:
+  headreward:
+    permission: headreward.command
