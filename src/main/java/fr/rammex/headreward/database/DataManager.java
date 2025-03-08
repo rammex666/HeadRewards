@@ -137,9 +137,9 @@ public class DataManager {
             PreparedStatement ps = connection.prepareStatement("SELECT * FROM head_data");
             ResultSet rs = ps.executeQuery();
             while (rs.next()) {
-                String headId = rs.getString("head_id");
+                String headId = rs.getString("head_name");
                 List<String> headDetails = new ArrayList<>();
-                headDetails.add(rs.getString("head_name"));
+                headDetails.add(rs.getString("head_id"));
                 headDetails.add(rs.getString("head_location"));
                 headDetails.add(rs.getString("head_reward"));
                 heads.put(headId, headDetails);

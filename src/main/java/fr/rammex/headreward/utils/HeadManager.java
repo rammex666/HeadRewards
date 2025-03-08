@@ -56,11 +56,9 @@ public class HeadManager {
     public static String getRandomHead() {
         Map<String, List<String>> heads = DataManager.getHeads();
 
-        List<List<String>> values = new ArrayList<>(heads.values());
+        List<String> headNames = new ArrayList<>(heads.keySet());
         Random random = new Random();
-        if(values.isEmpty()) return null;
-        List<String> randomHead = values.get(random.nextInt(values.size()));
-
-        return randomHead.get(0);
+        if (headNames.isEmpty()) return null;
+        return headNames.get(random.nextInt(headNames.size()));
     }
 }

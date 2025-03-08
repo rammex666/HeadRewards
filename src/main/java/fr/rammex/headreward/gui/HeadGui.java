@@ -21,8 +21,8 @@ public class HeadGui {
         Inventory inv = Bukkit.createInventory(null, 54, "§6Heads");
 
         for (Map.Entry<String, List<String>> head : heads.entrySet()) {
-            String headID = head.getKey();
-            String headName = head.getValue().get(0);
+            String headName = head.getKey();
+            String headID = head.getValue().get(0);
             String headLocation = head.getValue().get(1);
             String headReward = head.getValue().get(2);
 
